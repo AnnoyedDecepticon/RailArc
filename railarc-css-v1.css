@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {background-color: rgb(22, 22, 22);margin: 0};
+/*Whatever gets mentioned first will not work, so I have to mention it twice. This is a bug, please someone fix this!!*/
+h3,h4,h5,h6,p {
+    color: rgb(210, 210, 210);
+    font-family: 'Inter', Arial, sans-serif;
+    padding: 20px;
+}
+h2 {
+    color: rgb(225, 225, 225);
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 500;
+    padding: 25px;
+}
+.ribbon{
+  background-color: rgb(44, 96, 175);border-color: rgb(22,22,22);border-width: 5px;border-style: solid;
+}
+h3,h4,h5,h6,p {
+    color: rgb(210, 210, 210);
+    font-family: 'Inter', Arial, sans-serif;
+    padding-left: 20px;
+}
+h1 {
+    color: rgb(245, 245, 245);
+    font-family:'Inter', Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-kerning: auto;
+    font-size: 70px;
+    letter-spacing: -3px;
+    padding: 45px;
+    margin-top: 80px;
+}
+
+.header{
+    background-color: rgb(44, 96, 175);
+
+}
+.column{
+  float: left;
+  padding-bottom: 50px;
+}
+
+.column.side{
+  width: 20%;
+}
+
+.column.middle{
+  width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  background-color: rgb(32, 32, 32);
+  text-align: center;
+  padding: 30px;
+}
+/*!!Horizontal nav bar code below, please keep it below this text otherwise things will break!!*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(32, 32, 32);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 30px;
+  text-decoration: none;
+  font-size: large;
+  font-weight: 300;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(110, 110, 110);
+}
+
+.active {
+  background-color: rgb(44, 96, 175);
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    display: inline-block;
+}
+
+/*PLEASE DO NOT ADD NEW CODES TO THIS SECTION!!!! (UNLESS IT'S FOR THE NAV BAR!)*/

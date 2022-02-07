@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Index</title>
+
+<style>
+body {background-color: rgb(23, 23, 23)}
+h1 {color: rgb(245, 245, 245)}
+</style>
+
+</head>
+
+<body>
+<h1>"Hello and welcome to RailArk"</h1>
+</body>
+
+</html>
