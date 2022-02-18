@@ -19,23 +19,69 @@ h3,h4,h5,h6,p {
     color: rgb(210, 210, 210);
     font-family: 'Inter', Arial, sans-serif;
     padding-left: 20px;
+    padding-right: 20px;
 }
+
+a{
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+a:link{
+  color: rgb(59, 160, 255)
+}
+a:visited{
+  color: rgb(235, 221, 30)
+}
+
+.a-kesamping{
+  padding-left: 20px;
+  padding-right: 20px;
+  display: block
+}
+
 h1 {
     color: rgb(245, 245, 245);
     font-family:'Inter', Arial, sans-serif;
-    font-weight: 700;
+    font-weight: bolder;
     text-align: center;
     font-kerning: auto;
-    font-size: 70px;
-    letter-spacing: -3px;
-    padding: 45px;
-    margin-top: 80px;
+    font-size: 5.189vw; /*This was 70px*/
+    letter-spacing: -0.222vw;
+    padding: 3.36vw;
+    margin-top: 6vw;
 }
 
 .header{
     background-color: rgb(44, 96, 175);
 
 }
+
+.header-kuid-index{
+  position: relative; 
+  height: 33vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+iframe {
+  border: none;
+}
+/*Thanks to this site for the solution: https://coder-coder.com/background-image-opacity/ */
+.header-kuid-index::before {
+  content: "";
+  background-image: url('code.png');
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+  background-size: cover;
+  z-index: -1
+}
+
 .column{
   float: left;
   padding-bottom: 50px;
@@ -66,8 +112,56 @@ h1 {
   text-align: center;
   padding: 30px;
 }
+
+table, th, td {
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  border: 2px solid whitesmoke;
+  border-collapse: collapse;
+  padding: 7px;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr:nth-nav-child(even){
+  background-color: rgb(44, 96, 175);
+}
+
+tr:hover{background-color: rgba(255, 255, 255, 0.25);}
+
+.jump-to {
+  position: fixed;
+  width: 20%;
+  background-color: rgba(88, 88, 88, 0.75);
+  border: 0.890vw; /*this was 12px*/
+  padding-bottom: 1.853vw; /*this was 25px*/
+  border-color: brown;
+  bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    margin-top: 6.9vw;
+    font-size: 6.5vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  h1{
+  margin-top: 17vw;
+  font-size: 9vw;
+  }
+  .jump-to{
+    width:80%;
+  }
+}
 /*!!Horizontal nav bar code below, please keep it below this text otherwise things will break!!*/
-ul {
+ul.nav-parent {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -76,6 +170,11 @@ ul {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 li {
@@ -86,7 +185,7 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 30px 30px;
+  padding: 2.224vw 2.224vw;
   text-decoration: none;
   font-size: large;
   font-weight: 300;
@@ -99,15 +198,52 @@ li a:hover:not(.active) {
 .active {
   background-color: rgb(44, 96, 175);
 }
-
-.parent {
+/*
+.nav-parent {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.child {
+*/
+.nav-child {
     display: inline-block;
+    font-size: 1.3vw;
+}
+
+.pc-txt{
+  display: inline-block;
+}
+
+.hidden{
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  a.nav-child{
+    font-size: 2vw;
+  }
+
+}
+
+
+@media screen and (max-width: 700px) {
+  p{
+    font-size: 4.23vw;
+  }
+  a.nav-child{
+    font-size: 3vw;
+  }
+  h2{
+    font-size: 5vw;
+  }
+
+  .hidden{
+    display: inline-block;
+    font-size: 12vw;
+  }
+  .pc-txt{
+    display: none;
+  }
+
 }
 
 /*PLEASE DO NOT ADD NEW CODES TO THIS SECTION!!!! (UNLESS IT'S FOR THE NAV BAR!)*/
