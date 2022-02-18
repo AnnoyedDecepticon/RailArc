@@ -6,25 +6,48 @@
 <title>Home | RailArc</title>
 <!--Internal style sheet, please move to a dedicated external .css style sheet later!-->
 <!--Yep, just did that! 07/02/2022 17:36-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round|Material+Icons+Outlined">
 <link rel="stylesheet" href="railarc-css-v1.css">
-
 </head>
-
-
+<!--For some reason, I have to import the font again otherwise the font weight will not work. How, and why
+this happens is unclear. I think it has to do with the icon import, the custom css should've taken precedence but
+it doesn't...-->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
 <body>
 <div> <!--This is the nav bar controller. Be sure to change it accordingly!-->
-<ul class="parent">
-  <li><a class="child, active" href="index.html">Home</a></li>
-  <li><a class="child" href="#downloads">Downloads</a></li>
-  <li><a class="child" href="wip.html">Work-in-Progress</a></li>
-  <li><a class="child" href="#kuid-list">KUID List</a></li>
-  <li><a class="child" href="#contact">Contact Us</a></li>
-  <li><a class="child" href="about.html">About</a></li>
+<ul class="nav-parent">
+  <li><a class="nav-child active" href="index.html" style="color: rgb(210,210,210)">
+    <span class="pc-txt">Home</span>
+    <span class="hidden material-icons-round">home</span>
+  </a></li>
+  <li><a class="nav-child" href="#downloads" style="color: rgb(210,210,210)">
+    <span class="pc-txt">Downloads</span>
+    <span class="hidden material-icons-round">download</span>
+  </a></li>
+  <li><a class="nav-child" href="wip.html" style="color: rgb(210,210,210)">
+    <span class="pc-txt">Work-in-Progress</span>
+    <span class="hidden material-icons-round">upcoming</span>
+  </a></li>
+  <li><a class="nav-child" href="kuid-index.html" style="color: rgb(210,210,210)">
+    <span class="pc-txt">KUID List</span>
+    <span class="hidden material-icons-round">code</span>
+  </a></li>
+  <li><a class="nav-child" href="#contact" style="color: rgb(210,210,210)">
+    <span class="pc-txt">Contact Us</span>
+    <span class="hidden material-icons-round">contact_page</span>
+  </a></li>
+  <li><a class="nav-child" href="about.html" style="color: rgb(210,210,210)">
+    <span class="pc-txt">About</span>
+    <span class="hidden material-icons-round">info</span>
+  </a></li>
 </ul>
 </div>
 
-<div class="header" style="padding:0px;margin-top: 44px;">
+<div class="header" style="padding:0px;">
   <h1>Hello and welcome to RailArc</h1>
 </div>
   <h2 style="text-align: center;">We are a Trainz content creator who focus on European and Japanese Content, but we occassionally make content for other regions too.<br>
@@ -32,7 +55,7 @@
 <div class="row">
   <div class="column side">
     <h2 class="ribbon">Jump to...</h2>
-    <p>The quick brown fox jumps over the lazy sheep</p>
+    <p>There is nothing to jump to!</p>
   </div>
   <div class="column middle">
     <h2 class="ribbon">Browse</h2>
@@ -40,14 +63,14 @@
   </div>
   <div class="column side">
     <h2 class="ribbon">New Releases.</h2>
-    <p>Empty :(</p>
+    <iframe src="new-releases.html" style="width:100%;" title="New Contents"></iframe>
   </div>
 </div>
 
 <div class="footer">
   <p>Website hand-built using Visual Studio Code.</p>
+  <p style="font-size: small">Thanks to W3Schools for helping me make 97% of this site.</p>
 </div>
-
 
 </body>
 </html>
