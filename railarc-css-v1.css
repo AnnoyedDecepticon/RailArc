@@ -96,7 +96,7 @@ iframe {
 /*Thanks to this site for the solution: https://coder-coder.com/background-image-opacity/ */
 .header-kuid-index::before {
   content: "";
-  background-image: url('code.png');
+  background-image: url('code.PNG');
   position: absolute;
   top: 0vw;
   right: 0vw;
