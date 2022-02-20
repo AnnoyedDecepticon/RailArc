@@ -6,8 +6,10 @@
 <title>Home | RailArc</title>
 <!--Internal style sheet, please move to a dedicated external .css style sheet later!-->
 <!--Yep, just did that! 07/02/2022 17:36-->
+<link rel="icon" type="image/x-icon" href="favicon.svg">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round|Material+Icons+Outlined">
 <link rel="stylesheet" href="railarc-css-v1.css">
+
 </head>
 <!--For some reason, I have to import the font again otherwise the font weight will not work. How, and why
 this happens is unclear. I think it has to do with the icon import, the custom css should've taken precedence but
@@ -19,16 +21,24 @@ it doesn't...-->
 
 <body>
 <div> <!--This is the nav bar controller. Be sure to change it accordingly!-->
-<ul class="nav-parent">
-  <li><a class="nav-child active" href="index.html" style="color: rgb(210,210,210)">
-    <span class="pc-txt">Home</span>
+<ul class="nav-parent"><!--margin-left:-180px;margin-right: 70px;margin-bottom: -50px;margin-top:-50px-->
+  <li style="margin-left:-13.343vw;margin-right: 5.189vw;margin-bottom: -3.706vw;margin-top:-3.706vw;width: 7.5vw;height: auto;" class="pc-txt">
+    <a class="nav-child" href="index.html" style="color: rgb(210,210,210);">
+  <img src="favicon.svg" style="display: flex;width:3.706vw;height:auto;justify-content: center;align-items: center;">
+    </a>
+  </li>
+  <li class="hidden"><a class="nav-child" href="index.html" style="color: rgb(210,210,210)">
     <span class="hidden material-icons-round">home</span>
-  </a></li>
+  </a>
+  </li>
+  <!--<li>
+    <span class="pc-txt">Home</span>
+  </a></li> -->
   <li><a class="nav-child" href="#downloads" style="color: rgb(210,210,210)">
     <span class="pc-txt">Downloads</span>
     <span class="hidden material-icons-round">download</span>
   </a></li>
-  <li><a class="nav-child" href="wip.html" style="color: rgb(210,210,210)">
+  <li><a class="nav-child" href="wip.html" style="color: rgb(210, 210, 210)">
     <span class="pc-txt">Work-in-Progress</span>
     <span class="hidden material-icons-round">upcoming</span>
   </a></li>
@@ -53,7 +63,7 @@ it doesn't...-->
   <h2 style="text-align: center;">We are a Trainz content creator who focus on European and Japanese Content, but we occassionally make content for other regions too.<br>
     We create trains from the 60s onwards. Though that might change in the future.</h2>
 <div class="row">
-  <div class="column side">
+  <div class="column side" id="jumptobar">
     <h2 class="ribbon">Jump to...</h2>
     <p>There is nothing to jump to!</p>
   </div>

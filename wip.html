@@ -5,6 +5,7 @@
 <title>Work-in-Progress | RailArc</title>
 <!--Internal style sheet, please move to a dedicated external .css style sheet later!-->
 <!--Yep, just did that! 07/02/2022 17:36-->
+<link rel="icon" type="image/x-icon" href="favicon.svg">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round|Material+Icons+Outlined">
 <link rel="stylesheet" href="railarc-css-v1.css">
 <style>
@@ -17,10 +18,15 @@
 <body>
   <div> <!--This is the nav bar controller. Be sure to change it accordingly!-->
     <ul class="nav-parent">
-      <li><a class="nav-child" href="index.html" style="color: rgb(210,210,210)">
-        <span class="pc-txt">Home</span>
+      <li style="margin-left:-13.343vw;margin-right: 5.189vw;margin-bottom: -3.706vw;margin-top:-3.706vw;width: 7.5vw;height: auto;" class="pc-txt">
+        <a class="nav-child" href="index.html" style="color: rgb(210,210,210);">
+      <img src="favicon.svg" style="display: flex;width:3.706vw;height:auto;justify-content: center;align-items: center;">
+        </a>
+      </li>
+      <li class="hidden"><a class="nav-child" href="index.html" style="color: rgb(210,210,210)">
         <span class="hidden material-icons-round">home</span>
-      </a></li>
+      </a>
+      </li>
       <li><a class="nav-child" href="#downloads" style="color: rgb(210,210,210)">
         <span class="pc-txt">Downloads</span>
         <span class="hidden material-icons-round">download</span>
@@ -45,14 +51,14 @@
   </div>
     
 
-<div class="header" style="padding:0px;margin-top: 44px;">
+<div class="header" style="padding:0px;">
   <h1>Work-in-Progress</h1>
 </div>
   <p style="text-align: center;">This is where you can see what projects we are working on and at their level of completion.<br>
     Don't rely on any percentage meter to estimate when a content is going to arrive. The majority of the content listed here are not downloadable, this is because they are still "Raw" and haven't been imported to Trainz.<br>
     Please don't bug us about any unfinished project, we work when we want to.</p>
 <div class="row">
-  <div class="column side">
+  <div class="column side" id="jumptobar">
     <h2 class="ribbon">Jump to...</h2>
     <div class="jump-to">
       <p>Jump to parts of this page by clicking these links below!</p>

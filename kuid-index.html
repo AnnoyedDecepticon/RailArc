@@ -3,9 +3,10 @@
 
 <head>
 
-<title>Home | RailArc</title>
+<title>KUID List | RailArc</title>
 <!--Internal style sheet, please move to a dedicated external .css style sheet later!-->
 <!--Yep, just did that! 07/02/2022 17:36-->
+<link rel="icon" type="image/x-icon" href="favicon.svg">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round|Material+Icons+Outlined">
 <link rel="stylesheet" href="railarc-css-v1.css">
 <style>
@@ -16,12 +17,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
 <body>
+  <script>
+/*https://stackoverflow.com/questions/49247129/javascript-copy-p-tag-with-html-format-to-clipbord/49247263
+  Script taken from sheeldotme's answer*/
+  function copyToClipboard(id) {
+    var from = document.getElementById(id);
+    var range = document.createRange();
+    window.getSelection().removeAllRanges();
+    range.selectNode(from);
+    window.getSelection().addRange(range);
+    document.execCommand('copy');
+    window.getSelection().removeAllRanges();
+ }
+  </script>
+
   <div> <!--This is the nav bar controller. Be sure to change it accordingly!-->
     <ul class="nav-parent">
-      <li><a class="nav-child" href="index.html" style="color: rgb(210,210,210)">
-        <span class="pc-txt">Home</span>
+      <li style="margin-left:-13.343vw;margin-right: 5.189vw;margin-bottom: -3.706vw;margin-top:-3.706vw;width: 7.5vw;height: auto;" class="pc-txt">
+        <a class="nav-child" href="index.html" style="color: rgb(210,210,210);">
+      <img src="favicon.svg" style="display: flex;width:3.706vw;height:auto;justify-content: center;align-items: center;">
+        </a>
+      </li>
+      <li class="hidden"><a class="nav-child" href="index.html" style="color: rgb(210,210,210)">
         <span class="hidden material-icons-round">home</span>
-      </a></li>
+      </a>
+      </li>
       <li><a class="nav-child" href="#downloads" style="color: rgb(210,210,210)">
         <span class="pc-txt">Downloads</span>
         <span class="hidden material-icons-round">download</span>
@@ -45,14 +65,14 @@
     </ul>
     </div>
     
-<div class="header-kuid-index" style="padding:0px;margin-top: 44px;">
+<div class="header-kuid-index" style="padding:0px;margin-top: 3.6vw;">
   <h1>KUID Index</h1>
 </div>
   <p style="text-align: center;">This is a list of KUIDs under the user id of 947449.
     This list may not be a comprehensive list and you may see the numbers jump around. <br> This is because these missing
-    numbers are most likely either private routes used for photography/testing, or it is a private asset used for testing. <br> <b>If there are any of OUR assets using KUIDs not on the DLS or not listed here, then please <a href="#contact">Contact Us.</a></b></p>
+    numbers are most likely either private routes used for photography/testing, or it is a private asset used for testing. <br> <b>If there are any of our assets using KUIDs not on the DLS or not listed here, then please <a href="#contact">Contact Us.</a></b></p>
 <div class="row">
-  <div class="column side">
+  <div class="column side" id="jumptobar">
     <h2 class="ribbon">Jump to...</h2>
     <!--paste this thing EVERYWHERE!!!! YES, CONQUER THIS WEBSITE!! MUAHAHAHAHAHAH-->
     <div class="jump-to">
@@ -66,32 +86,56 @@
     <p>I apologise if this list is outdated.</p>
     <p>re57k's assets (User ID 947449)</p>
     </div>
+    <div style="overflow-x:auto">
     <table class="center" style="width:95%;">
         <tr>
+            <th>Copy</th>
             <th>KUID</th>
             <th>Name</th>
             <th>Type</th>
             <th>Info</th>
         </tr>
         <tr>
-            <td>[example kuid]</td>
+            <td>
+              <div class="tomboltengah">
+              <button type="button" onclick="copyToClipboard('kuid1')" style="float: left;">
+              Copy KUID
+              </button>
+              </div>
+              </td>
+            <td id="kuid1">[example kuid 1234]</td>
             <td>[example name]</td>
             <td>[example type]</td>
-            <td>[example note]</td>
+            <td>[example note abcd]</td>
         </tr>
         <tr>
-            <td>[example kuid]</td>
+            <td>
+              <div class="tomboltengah">
+              <button type="button" onclick="copyToClipboard('kuid2')" style="float: left;">
+                Copy KUID
+              </button>
+              </div>
+            </td>
+            <td id="kuid2">[example kuid 2345]</td>
             <td>[example name]</td>
             <td>[example type]</td>
-            <td>[example note]</td>
+            <td>[example note abcd]</td>
         </tr>
         <tr>
-            <td>[example kuid]</td>
+            <td>
+              <div class="tomboltengah">
+              <button type="button" onclick="copyToClipboard('kuid3')" style="float: left;">
+                Copy KUID
+              </button>
+              </div>
+            </td>
+            <td id="kuid3">[example kuid 3456]</td>
             <td>[example name]</td>
             <td>[example type]</td>
-            <td>[example note]</td>
+            <td>[example note abcd]</td>
         </tr>
     </table>
+    </div>
   </div>
   <div class="column side">
     <h2 class="ribbon">New Releases.</h2>
